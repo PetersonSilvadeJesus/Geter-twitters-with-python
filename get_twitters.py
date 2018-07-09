@@ -154,17 +154,17 @@ def save(twitter, data_param, con, cur):
 
 
 def twittar():
-    app_key = "3cM4m0CN5Vp8TGW0CknaN4kBX"
-    app_secret = "DWPV9SBb4uaZzRjwxOVrWYnc0pIHD0kkwSpm10x8KOzPfZjyH9"
-    token_key = "975406632464248832-IMWvyqzRrYhgDJpJT1ta2d75n2OA0N6"
-    token_secret = "tCWBkGfHGPSxb6txQItxEnXkaoH8nKwhNbQljh4m6jZq1"
+    app_key = ""
+    app_secret = ""
+    token_key = ""
+    token_secret = ""
 
     twitter = Twython(app_key, app_secret, token_key, token_secret)
 
     lista = []
 
     try:
-        con = psycopg2.connect("host='localhost' dbname='twitter' user='peterson' password='123456789'")
+        con = psycopg2.connect("host='localhost' dbname='' user='' password=''")
         cur = con.cursor()
         twite = list()
 
